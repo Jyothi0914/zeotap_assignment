@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: .
+    environment:
+      - API_KEY=your_api_key
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
